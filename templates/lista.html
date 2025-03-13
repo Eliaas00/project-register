@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista</title>
+    <style type="text/css">
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid #171616;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lists de alunos - {{ titulo }}</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>RA</th>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for aluno in alunos %}
+        <tr>
+          <td>-</td>
+          <td>{{ aluno }}</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
