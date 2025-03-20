@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <h1>Cadastrar novo aluno</h1>
+    <form method="post" action="/add_aluno">
+      <label>
+        Digite o RA do Aluno:
+        <input type="text" placeholder="00000" name="ra" />
+      </label>
+      <label> Digite o nome do Aluno: <input type="text" name="nome" /> </label>
+      <label>
+        Digite a idade do aluno:
+        <input type="text" name="idade" />
+      </label>
+      <label>
+        Digite o e-mail:
+        <input type="email" name="email" placeholder="exemplo@email.com" />
+      </label>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
+</html>
